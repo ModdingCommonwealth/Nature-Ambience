@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "forestx",
+  "version": "${version}",
+  "name": "Forest X",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/forestx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.koshakmine.forestx.client.ForestxClient"
+    ],
+    "main": [
+      "com.koshakmine.forestx.Forestx"
+    ]
+  },
+  "mixins": [
+    "forestx.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
