@@ -11,6 +11,6 @@ import net.minecraft.client.render.RenderLayer;
 public class ForestxClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(Forestx.RaspberryBush1, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Forestx.RaspberryBush, RenderLayer.getCutout());
     }
 }

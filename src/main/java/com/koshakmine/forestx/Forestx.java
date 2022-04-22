@@ -1,11 +1,11 @@
 package com.koshakmine.forestx;
 
+import com.koshakmine.forestx.blocks.RaspberryBush;
 import com.koshakmine.forestx.items.BerryItem;
 import com.koshakmine.forestx.items.FoodItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Material;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,8 +21,13 @@ public class Forestx implements ModInitializer {
     public static final Item Blackberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build()));
     public static final Item Cranberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build()));
     public static final Item Blueberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build()));
+    public static final Item Salt_cod = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
+    public static final Item Salt_salmon = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
+    public static final Item Salt_egg = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
+    public static final Item Salt_tropical_fish = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
+    public static final Item Salt = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     //Blocks
-    public static final SweetBerryBushBlock RaspberryBush1 = new SweetBerryBushBlock(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH));
+    public static final RaspberryBush RaspberryBush = new RaspberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
     //Registry
     @Override
     public void onInitialize() {
@@ -32,7 +37,12 @@ public class Forestx implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackberries"), Blackberry);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cranberries"), Cranberry);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blueberries"), Blueberry);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt"), Salt);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_cod"), Salt_cod);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_salmon"), Salt_salmon);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_egg"), Salt_egg);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_tropical_fish"), Salt_tropical_fish);
         //Blocks
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_raspberry1"), RaspberryBush1);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_raspberry"), RaspberryBush);
     }
 }

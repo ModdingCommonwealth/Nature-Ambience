@@ -17,7 +17,7 @@ public class BerryItem extends Item {
         Hand hand = context.getHand();
         if(context.getPlayer().getStackInHand(hand).getItem() == Forestx.Raspberry) {
             context.getPlayer().getStackInHand(hand).setCount(0);
-            context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.RaspberryBush1.getDefaultState());
+            context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.RaspberryBush.getDefaultState());
 
         }
         return super.useOnBlock(context);
