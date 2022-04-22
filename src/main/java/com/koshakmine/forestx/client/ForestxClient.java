@@ -12,5 +12,8 @@ public class ForestxClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(Forestx.RaspberryBush, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Forestx.BlackberryBush, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Forestx.BlueberryBush, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Forestx.CranberryBush, RenderLayer.getCutout());
     }
 }

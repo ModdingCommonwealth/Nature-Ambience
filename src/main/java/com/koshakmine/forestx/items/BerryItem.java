@@ -19,6 +19,24 @@ public class BerryItem extends Item {
             context.getPlayer().getStackInHand(hand).setCount(0);
             context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.RaspberryBush.getDefaultState());
 
+        } else {
+            if(context.getPlayer().getStackInHand(hand).getItem() == Forestx.Blackberry) {
+                context.getPlayer().getStackInHand(hand).setCount(0);
+                context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.BlackberryBush.getDefaultState());
+
+            } else {
+                if(context.getPlayer().getStackInHand(hand).getItem() == Forestx.Blueberry) {
+                    context.getPlayer().getStackInHand(hand).setCount(0);
+                    context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.BlueberryBush.getDefaultState());
+
+                } else {
+                    if(context.getPlayer().getStackInHand(hand).getItem() == Forestx.Cranberry) {
+                        context.getPlayer().getStackInHand(hand).setCount(0);
+                        context.getWorld().setBlockState(context.getBlockPos().up(), Forestx.CranberryBush.getDefaultState());
+
+                    }
+                }
+            }
         }
         return super.useOnBlock(context);
     }

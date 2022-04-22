@@ -3,5 +3,10 @@
   "item.forestx.blackberries": "Blackberries",
   "item.forestx.raspberries": "Raspberries",
   "item.forestx.cranberries": "Cranberries",
-  "item.forestx.blueberries": "Blueberries"
+  "item.forestx.blueberries": "Blueberries",
+  "item.forestx.salt": "Salt",
+  "item.forestx.salt_cod": "Salted Cod",
+  "item.forestx.salt_salmon": "Salted Salmon",
+  "item.forestx.salt_egg": "Salted Egg",
+  "item.forestx.salt_tropical_fish": "Salted Tropical Fish"
 }

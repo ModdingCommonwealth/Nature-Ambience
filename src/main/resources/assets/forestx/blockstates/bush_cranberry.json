@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=3": { "model": "forestx:block/bush_cranberry1" },
+    "age=2": { "model": "forestx:block/bush_cranberry1" },
+    "age=1": { "model": "forestx:block/bush_cranberry0" },
+    "age=0": { "model": "forestx:block/bush_cranberry0" }
+  }
+}

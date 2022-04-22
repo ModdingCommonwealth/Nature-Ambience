@@ -1,5 +1,8 @@
 package com.koshakmine.forestx;
 
+import com.koshakmine.forestx.blocks.BlackberryBush;
+import com.koshakmine.forestx.blocks.BlueberryBush;
+import com.koshakmine.forestx.blocks.CranberryBush;
 import com.koshakmine.forestx.blocks.RaspberryBush;
 import com.koshakmine.forestx.items.BerryItem;
 import com.koshakmine.forestx.items.FoodItem;
@@ -28,6 +31,9 @@ public class Forestx implements ModInitializer {
     public static final Item Salt = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     //Blocks
     public static final RaspberryBush RaspberryBush = new RaspberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
+    public static final BlackberryBush BlackberryBush = new BlackberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
+    public static final BlueberryBush BlueberryBush = new BlueberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
+    public static final CranberryBush CranberryBush = new CranberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
     //Registry
     @Override
     public void onInitialize() {
@@ -44,5 +50,8 @@ public class Forestx implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_tropical_fish"), Salt_tropical_fish);
         //Blocks
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_raspberry"), RaspberryBush);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_blackberry"), BlackberryBush);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_blueberry"), BlueberryBush);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_cranberry"), CranberryBush);
     }
 }
