@@ -4,6 +4,8 @@ import com.koshakmine.forestx.blocks.BlackberryBush;
 import com.koshakmine.forestx.blocks.BlueberryBush;
 import com.koshakmine.forestx.blocks.CranberryBush;
 import com.koshakmine.forestx.blocks.RaspberryBush;
+import com.koshakmine.forestx.features.RaspberryBushFeature;
+import com.koshakmine.forestx.features.RaspberryBushFeatureConfig;
 import com.koshakmine.forestx.items.BerryItem;
 import com.koshakmine.forestx.items.FoodItem;
 import net.fabricmc.api.ModInitializer;
@@ -15,9 +17,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.Feature;
 
 public class Forestx implements ModInitializer {
     static String MOD_ID = "forestx";
+    //features
+    private static final Feature<RaspberryBushFeatureConfig> RaspberryBushFeature = new RaspberryBushFeature(RaspberryBushFeatureConfig.CODEC);
     //Items
     public static final Item Berrypie = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(6f).build()));
     public static final Item Raspberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build()));
@@ -53,5 +58,7 @@ public class Forestx implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_blackberry"), BlackberryBush);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_blueberry"), BlueberryBush);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_cranberry"), CranberryBush);
+        //Features
+        Registry.register(Registry.FEATURE, new Identifier(MOD_ID, "raspberrybushfeature"), RaspberryBushFeature);
     }
 }

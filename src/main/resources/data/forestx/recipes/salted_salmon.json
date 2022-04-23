@@ -9,7 +9,8 @@
     }
   ],
   "result": {
-    "item": "forestx:salted_salmon",
+    "item": "forestx:salt_salmon",
     "count": 1
-  }
+  },
+  "group": "forestx"
 }

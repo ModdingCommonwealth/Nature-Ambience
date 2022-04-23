@@ -7,9 +7,10 @@
     {
       "item": "minecraft:egg"
     }
-    ],
+  ],
   "result": {
-    "item": "forestx:salted_egg",
+    "item": "forestx:salt_egg",
     "count": 1
-  }
+  },
+  "group": "forestx"
 }

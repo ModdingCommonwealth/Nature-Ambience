@@ -52,7 +52,7 @@ public class RaspberryBush extends PlantBlock implements Fertilizable {
         if (state.get(AGE) == 0) {
             return SMALL_SHAPE;
         }
-        if (state.get(AGE) < 3) {
+        if (state.get(AGE) <= 3) {
             return SMALL_SHAPE;
         }
         return super.getOutlineShape(state, world, pos, context);
