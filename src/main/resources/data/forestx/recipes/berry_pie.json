@@ -2,15 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "forestx:salt"
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sweet_berries"
     },
     {
       "item": "minecraft:egg"
     }
   ],
   "result": {
-    "item": "forestx:salt_egg",
+    "item": "forestx:berry_pie",
     "count": 1
   },
-  "group": "forestx_salted"
+  "group": "forestx_berries"
 }
