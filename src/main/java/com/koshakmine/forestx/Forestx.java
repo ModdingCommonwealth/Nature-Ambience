@@ -34,6 +34,7 @@ public class Forestx implements ModInitializer {
     public static final Item Salt_egg = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
     public static final Item Salt_tropical_fish = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()));
     public static final Item Salt = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item Silver_ingot = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     //Blocks
     public static final RaspberryBush RaspberryBush = new RaspberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
     public static final BlackberryBush BlackberryBush = new BlackberryBush(FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).nonOpaque());
@@ -53,6 +54,7 @@ public class Forestx implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_salmon"), Salt_salmon);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_egg"), Salt_egg);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "salt_tropical_fish"), Salt_tropical_fish);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "silver_ingot"), Silver_ingot);
         //Blocks
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_raspberry"), RaspberryBush);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "bush_blackberry"), BlackberryBush);
