@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "natureambience:block/blueberry_bush0"
+  }
+}

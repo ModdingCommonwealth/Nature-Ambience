@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forestx:block/cranberry_bush1"
-  }
-}

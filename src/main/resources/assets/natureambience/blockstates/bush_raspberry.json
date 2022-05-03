@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=3": { "model": "natureambience:block/bush_raspberry" },
+    "age=2": { "model": "natureambience:block/bush_raspberry" },
+    "age=1": { "model": "natureambience:block/bush_new" },
+    "age=0": { "model": "natureambience:block/bush_new" }
+  }
+}

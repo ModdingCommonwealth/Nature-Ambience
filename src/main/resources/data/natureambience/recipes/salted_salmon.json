@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "natureambience:salt"
+    },
+    {
+      "item": "minecraft:salmon"
+    }
+  ],
+  "result": {
+    "item": "natureambience:salt_salmon",
+    "count": 1
+  },
+  "group": "natureambience_salted"
+}

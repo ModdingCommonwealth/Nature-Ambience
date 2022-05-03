@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "forestx",
+  "id": "natureambience",
   "version": "${version}",
-  "name": "Forest X",
+  "name": "Nature Ambience",
   "description": "",
-  "authors": [],
+  "authors": ["Koshak_Mine"],
   "contact": {},
   "license": "GPL-3.0",
-  "icon": "assets/forestx/icon.png",
+  "icon": "assets/natureambience/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.koshakmine.forestx.client.ForestxClient"
+      "com.koshakmine.natureambience.client.NatureambienceClient"
     ],
     "main": [
-      "com.koshakmine.forestx.Forestx"
+      "com.koshakmine.natureambience.Natureambience"
     ]
   },
   "mixins": [
-    "forestx.mixins.json"
+    "natureambience.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.13.0",
