@@ -24,7 +24,7 @@ public class Natureambience implements ModInitializer {
     //features
     private static final Feature<RaspberryBushFeatureConfig> RaspberryBushFeature = new RaspberryBushFeature(RaspberryBushFeatureConfig.CODEC);
     //Items
-    public static final Item Berrypie = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(1.1f).build()));
+    public static final Item Berrypie = new FoodItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(8).saturationModifier(0.3f).build()));
     public static final Item Raspberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build()));
     public static final Item Blackberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build()));
     public static final Item Cranberry = new BerryItem(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build()));
